@@ -41,12 +41,10 @@
     }
 
     /* Font Awesome Icons */
-    #full-name::before {
-        content: "\f2bd ";
+    #icon-user {
+        display: inline;
         font-weight: 900;
         font-family: "Font Awesome 5 Free";
-        position: absolute;
-        left: ;
     }
 
     #email::before {
@@ -205,6 +203,8 @@ img {
     margin-right: auto;
 }
 
+
+
 .form-container {
     display: grid;
 }
@@ -214,6 +214,11 @@ img {
     border-radius: 2px;
     padding: .1em;
 }
+
+#icon-user {
+    display: none;
+}
+
 
 /* Error Div Styling */
 .error {
@@ -231,7 +236,7 @@ img {
 
 /*  */
 .asterisk_input::after {
-    content: " *";
+    content: "*";
     color: red;
     font-size: 16px;
 }
