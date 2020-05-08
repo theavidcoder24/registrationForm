@@ -15,17 +15,20 @@ function revealPasswords() {
 }
 
 function comparePass() {
-    if (password_one.value === password_two.value) {
-        error.innerHTML = "Passwords Match";
-        password_one.setCustomValidity("");
-        password_two.setCustomValidity("");
-    }
-    else {
-        error.innerHTML = "Passwords don't match";
-        password_one.setCustomValidity("");
-        password_two.setCustomValidity("");
+    if (password_one.value.length > 0 && password_two.value.length > 0) {
+        if (password_one.value === password_two.value) {
+            error.innerHTML = "Passwords Match";
+            password_one.setCustomValidity("");
+            password_two.setCustomValidity("");
+        }
+        else {
+            error.innerHTML = "Passwords don't match";
+            password_one.setCustomValidity("");
+            password_two.setCustomValidity("");
+        }
     }
 }
+
 
 
 /* Agree Terms
