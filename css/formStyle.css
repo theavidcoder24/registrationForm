@@ -113,12 +113,17 @@ input {
 }
 
 input:invalid {
-    border: 2px solid red;
+    border: 1px solid red;
 }
 
 input:required {
     border: 1.5px dashed red;
 }
+/*
+input:valid {
+    border: 1.5px solid forestgreen;
+}
+*/
 
 input[type=text]:focus {
     border: 1.5px solid rgb(136, 136, 136);
