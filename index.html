@@ -72,6 +72,25 @@
                 <div class="help">
                     <i class="far fa-question-circle"></i>
                     <!-- Unicode: f059 -->
+                    <input type="checkbox" id="agreed">
+                    <a href="#" onclick="createModal()">Agree to terms</a>
+
+                    <div id="tint" onclick="destroyModal()" hidden>
+                    </div>
+                    <div id="modal" hidden>
+                        <a href="#" onclick="destroyModal()">X</a>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quis a fugit culpa molestias
+                            ut corrupti quam
+                            possimus, enim quaerat consequatur accusamus commodi ducimus esse? Sint esse repellat
+                            reiciendis ipsum.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum recusandae quia rerum
+                            praesentium voluptatum
+                            quas culpa quo numquam vitae eum error, obcaecati molestias fuga incidunt explicabo quae
+                            eaque corrupti
+                            voluptatem.</p>
+                        <button type="button" onclick="enableCheckbox()">Agree to terms</button>
+                        <button type="button" onclick="disableCheckbox()">Decline the terms</button>
+                    </div>
                 </div>
             </fieldset>
         </div>
