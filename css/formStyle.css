@@ -1,31 +1,48 @@
-/* --- Media Queries --- */
+/* ==== Media Queries ==== */
 
 /* Desktop + Laptop */
-@media only screen and (min-width:720px) {
+@media only screen and (min-width:720px) {}
 
-    /* Turn off input placeholder */
-    ::placeholder {
-        display: none;
+/* Phone + Tablet */
+@media only screen and (min-width: 600px) {
+
+    /* -- Turn off input placeholder -- */
+    ::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: transparent;
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: transparent;
+    }
+
+    :-ms-input-placeholder {
+        color: transparent;
     }
 }
 
-/* Phone + Tablet */
 @media only screen and (max-width: 600px) {
 
-    /* Turn off animated gradient */
+
+    /* -- Turn off animated gradient -- */
     body {
         background: #0029c5;
         animation: none;
     }
 
-    /* Hide Label */
+    /* -- Hide Label -- */
     label {
         display: none;
         width: 100%;
     }
 
     /* Font Awesome Icons */
-   input #full-name::before {
+    input~#full-name::before {
         content: "\f2bd ";
         font-weight: 900;
         font-family: "Font Awesome 5 Free";
