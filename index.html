@@ -22,10 +22,8 @@
                     <div class="form-container">
                         <!-- Full Name Field -->
                         <label for="full-name" class="fname">Full Name</label>
-                        <!-- Use :before and after to style red * -->
-                        <span class="asterisk_input"></span>
-                        <div class="inputContainer">
-                            <input type="text" id="full-name" placeholder="Full Name" pattern="">
+                        <div class="inputContainer"><span class="asterisk_input"></span>
+                            <input type="text" id="full-name" placeholder="Full Name" pattern="(?!.*)[A-Za-z]{3,128}">
                         </div>
                         <div class="error"></div>
                         <!-- Email Field-->
