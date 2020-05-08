@@ -1,5 +1,4 @@
 
-
 /* == Password Visibility == */
 function revealPasswords() {
     if (password_one.getAttribute('type') === 'text') {
