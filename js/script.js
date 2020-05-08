@@ -28,7 +28,7 @@ function comparePass() {
 }
 
 
-/* Agree Terms 
+/* Agree Terms
 function agreedChecked(literalString) {
     console.log(literalString);
     if (agreedChecked.checked) {
