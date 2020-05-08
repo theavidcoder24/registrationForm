@@ -29,7 +29,7 @@ function comparePass() {
     }
 }
 
-/* Modal Box */
+/* == Modal Box == */
 document.onkeyup = function(esc) {
     if (esc.keyCode == 27) {
         destroyModal();

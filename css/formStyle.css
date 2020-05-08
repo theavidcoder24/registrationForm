@@ -124,6 +124,9 @@ input:valid {
 input:required {
     border: 1px dashed red;
 }
+input[type=email]:optional {
+    background-color: white;
+}
 
 i {
     cursor: pointer;
@@ -219,20 +222,13 @@ img {
     background-color: forestgreen;
 }
 
+
+/*  */
 .asterisk_input::after {
     content: " *";
     color: red;
     font-size: 16px;
 }
-
-/* Password Visibility 
-#show, #show2  {
-}
-
-#hide, #hide2 {
-    display: none;
-}
-*/
 
 /* Font Awesome Icons */
 .fname::before {
@@ -283,7 +279,7 @@ img {
     top: 0; left: 0; right: 0; bottom: 0;
 }
 #modal {
-    background-color: cornflowerblue;
+    background-color: white;
     position: absolute;
     z-index: 100;
     top: 15%; left: 15%; right: 15%;

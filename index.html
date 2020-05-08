@@ -62,8 +62,8 @@
                         </div>
                         <div class="error"></div>
                         <!-- Agree to Terms Field -->
-                        <input type="checkbox" id="agreed"><a href="#">I agree to the Terms and
-                            Conditions & Privacy Policy</a>
+                        <input type="checkbox" id="agreed" onclick="createModal()">
+                        <a href="#">I agree to the Terms and Conditions & Privacy Policy</a>
                         <div class="submitContainer">
                             <button id="submitForm">Submit</button>
                         </div>
@@ -72,24 +72,15 @@
                 <div class="help">
                     <i class="far fa-question-circle"></i>
                     <!-- Unicode: f059 -->
-                    <input type="checkbox" id="agreed">
-                    <a href="#" onclick="createModal()">Agree to terms</a>
-
                     <div id="tint" onclick="destroyModal()" hidden>
                     </div>
                     <div id="modal" hidden>
                         <a href="#" onclick="destroyModal()">X</a>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quis a fugit culpa molestias
-                            ut corrupti quam
-                            possimus, enim quaerat consequatur accusamus commodi ducimus esse? Sint esse repellat
-                            reiciendis ipsum.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum recusandae quia rerum
-                            praesentium voluptatum
-                            quas culpa quo numquam vitae eum error, obcaecati molestias fuga incidunt explicabo quae
-                            eaque corrupti
-                            voluptatem.</p>
-                        <button type="button" onclick="enableCheckbox()">Agree to terms</button>
-                        <button type="button" onclick="disableCheckbox()">Decline the terms</button>
+                        <h2>Help Video</h2>
+                        <iframe width="720" height="500" src="https://www.youtube.com/embed/2akt3P8ltLM?controls=1">
+                        </iframe>
+                        <button type="button">Agree</button>
+                        <button type="button">Decline</button>
                     </div>
                 </div>
             </fieldset>
