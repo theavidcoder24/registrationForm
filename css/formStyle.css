@@ -273,3 +273,24 @@ img {
     text-align: center;
     padding-top: .6em;
 }
+
+/* -- Modal Box Styling -- */
+
+#tint {
+    background-color: rgba(32,32,32,.9);
+    position: fixed;
+    z-index: 99;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+#modal {
+    background-color: cornflowerblue;
+    position: absolute;
+    z-index: 100;
+    top: 15%; left: 15%; right: 15%;
+    padding: .4em;
+}
+#modal a {
+    /* float: right; */
+    display: flex;
+    flex-direction: row-reverse;
+}
