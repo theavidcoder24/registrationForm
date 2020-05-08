@@ -23,7 +23,7 @@
                         <!-- Full Name Field -->
                         <label for="full-name" class="fname">Full Name</label>
                         <!-- Use :before and after to style red * -->
-                        <span class="asterisk_input">*</span>
+                        <span class="asterisk_input"></span>
                         <div class="inputContainer">
                             <input type="text" id="full-name" placeholder="Full Name">
                         </div>
@@ -39,7 +39,7 @@
                         <div class="passwordContainer">
                             <div class="inputContainer">
                                 <input type="password" name="password_one" id="password_one" placeholder="Password"
-                                    pattern="[A-Za-z]{8,}">
+                                    pattern="[A-Za-z]{8,}" onblur="comparePass()">
                                 <!-- Elements to toggle between password visibility -->
                                 <i id="eye" class="fas fa-eye" onclick="revealPasswords()"></i>
                             </div>
@@ -51,7 +51,7 @@
                         <div class="passwordContainer">
                             <div class="inputContainer">
                                 <input type="password" id="password_two" name="password_two"
-                                    placeholder="Confirm Password" pattern="[A-Za-z]{8,}">
+                                    placeholder="Confirm Password" pattern="[A-Za-z]{8,}" onblur="comparePass()">
                                 <!-- Elements to toggle between password visibility -->
                                 <i id="eye2" class="fas fa-eye" onclick="revealPasswords()"></i>
                             </div>
@@ -66,7 +66,8 @@
                         <!-- Agree to Terms Field -->
                         <p><input type="checkbox" id="agreecheck">I agree to the Terms and
                             Conditions & Privacy Policy</p>
-                        <div class="submitContainer"><button id="agreedToTerms" onclick="comparePass()">Submit</button>
+                        <div class="submitContainer">
+                            <button id="agreedToTerms">Submit</button>
                         </div>
                     </div>
                 </form>
