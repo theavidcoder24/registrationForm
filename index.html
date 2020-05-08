@@ -16,7 +16,7 @@
             <fieldset>
                 <legend>Register</legend>
                 <div class="logo">
-                        <img src="images/icon-4399643-edited.svg" alt="Logo Image" />
+                    <img src="images/icon-4399643-edited.svg" alt="Logo Image" />
                 </div>
                 <form action="#" method="POST" id="formsubmit" onsubmit="validate()" novalidate>
                     <div class="form-container">
@@ -24,7 +24,8 @@
                         <label class="fname">Full Name</label>
                         <div class="inputContainer"><span class="asterisk_input"></span>
                             <i id="icon-user" class="fas fa-user-circle"></i>
-                            <input class="input-field" type="text" id="full-name" placeholder="Full Name" pattern="(?!.*)[A-Za-z]{3,128}">
+                            <input class="input-field" type="text" id="full-name" placeholder="Full Name"
+                                pattern="(?!.*)[A-Za-z]{3,128}">
                         </div>
                         <div class="error"></div>
                         <!-- Email Field-->
@@ -63,18 +64,19 @@
                         </div>
                         <div class="error"></div>
                         <!-- Agree to Terms Field -->
-                        <input type="checkbox" id="agreed" onclick="createModal()">
-                        <a href="#">I agree to the Terms and Conditions & Privacy Policy</a>
+                        <p><input type="checkbox" id="agreecheck">I agree to the Terms and
+                            Conditions & Privacy Policy</p>
                         <div class="submitContainer">
                             <button id="submitForm">Submit</button>
                         </div>
                     </div>
                 </form>
                 <div class="help">
-                    <i class="far fa-question-circle"></i>
-                    <!-- Unicode: f059 -->
-                    <div id="tint" onclick="destroyModal()" hidden>
+                    <div class="hover-video">
+                        <i class="far fa-question-circle"></i>
+                        <!-- Unicode: f059 -->
                     </div>
+                    <div id="tint" onclick="destroyModal()" hidden></div>
                     <div id="modal" hidden>
                         <a href="#" onclick="destroyModal()">X</a>
                         <h2>Help Video</h2>
