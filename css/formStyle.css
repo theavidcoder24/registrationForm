@@ -302,7 +302,6 @@ img {
 }
 
 #modal a {
-    /* float: right; */
     display: flex;
     flex-direction: row-reverse;
 }
