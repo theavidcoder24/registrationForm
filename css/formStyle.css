@@ -118,17 +118,20 @@ input:invalid {
     border: 2px solid red;
 }
 
-/*
-input:valid {
-    border: 2px solid forestgreen;
-}
-*/
 input:required {
-    border: 1px dashed red;
+    border: 1.5px dashed red;
 }
 
-input[type=email]:optional {
+input[type=text]:focus {
+    border: 1.5px solid rgb(136, 136, 136);
+}
+
+input[type=email]:optional :focus {
     background-color: white;
+}
+
+input[type=password]:focus {
+    border: 1.5px solid rgb(136, 136, 136);
 }
 
 i {
