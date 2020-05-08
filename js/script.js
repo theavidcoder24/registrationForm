@@ -29,6 +29,36 @@ function comparePass() {
     }
 }
 
+/* Modal Box */
+
+document.onkeyup = function(esc) {
+    if (esc.keyCode == 27) {
+        destroyModal();
+    }
+}
+
+function createModal() {
+    tint.hidden = false;
+    modal.hidden = false;
+}
+
+function destroyModal() {
+    tint.getElementById('tint').hidden = true;
+    modal.getElementById('modal').hidden = true;
+}
+
+function disableCheckbox() {
+    agreed.disabled = true;
+    agreed.checked = false;
+    destroyModal();
+}
+
+function enableCheckbox() {
+    agreed.disabled = false;
+    agreed.checked = true;
+    destroyModal();
+}
+
 
 
 /* Agree Terms
