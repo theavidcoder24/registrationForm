@@ -27,8 +27,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-
-
     /* -- Turn off animated gradient -- */
     body {
         background: #0029c5;
@@ -189,12 +187,20 @@ img {
     margin: auto;
 }
 
+/* Logo Styling */
 .logo {
     height: 6em;
     width: 9em;
     margin-left: auto;
     margin-right: auto;
 }
+.fallback { 
+    display: none;
+    /* Make sure it's the same size as the SVG takes up */
+  }
+  .no-svg .fallback { 
+    background-image: url("images/icon-4399643-edited.svg"); 
+  }
 
 .form-container {
     display: grid;
