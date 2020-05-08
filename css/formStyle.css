@@ -194,13 +194,6 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-.fallback { 
-    display: none;
-    /* Make sure it's the same size as the SVG takes up */
-  }
-  .no-svg .fallback { 
-    background-image: url("images/icon-4399643-edited.svg"); 
-  }
 
 .form-container {
     display: grid;
