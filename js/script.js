@@ -30,7 +30,6 @@ function comparePass() {
 }
 
 /* Modal Box */
-
 document.onkeyup = function(esc) {
     if (esc.keyCode == 27) {
         destroyModal();
@@ -59,15 +58,3 @@ function enableCheckbox() {
     destroyModal();
 }
 
-
-
-/* Agree Terms
-function agreedChecked(literalString) {
-    console.log(literalString);
-    if (agreedChecked.checked) {
-        agreedToTerms.removeAttribute('disabled');
-    } else {
-        agreedToTerms.setAttribute('disabled', 'disabled');
-    }
-}
-*/
