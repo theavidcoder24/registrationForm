@@ -1,10 +1,4 @@
-// To be done when script loads
-window.onload = function() {
-    document.getElementById('formsubmit')
-    addEventListener('submit', function('event') {
-    event.preventDefault()
-    });
-}
+
 
 /* == Password Visibility == */
 function revealPasswords() {
