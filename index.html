@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formStyle.css">
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <main>
+        <div class="form-wrapper">
+            <fieldset>
+                <legend>Register</legend>
+                <div class="logo">
+                    <img src="images/icon-4399643-edited.svg" alt="Logo Image">
+                </div>
+                <form action="#" id="formsubmit" onsubmit="validate()" novalidate>
+                    <div class="form-container">
+                        <!-- Full Name Field -->
+                        <label for="full-name" class="fname">Full Name</label>
+                        <!-- Use :before and after to style red * -->
+                        <div class="inputContainer">
+                            <input type="text" id="full-name" placeholder="Full Name">
+                        </div>
+                        <div class="error"></div>
+                        <!-- Email Field-->
+                        <label for="email" class="em">Email</label>
+                        <div class="inputContainer">
+                            <input type="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="error"></div>
+                        <!-- Password Field -->
+                        <label class="password">Password</label>
+                        <div class="passwordContainer">
+                            <div class="inputContainer">
+                                <input type="password" name="password_one" id="password_one" placeholder="Password"
+                                    pattern="[A-Za-z]{3,}" min="4" max="14">
+                                <!-- Elements to toggle between password visibility -->
+                                <i id="eye" class="fas fa-eye" onclick="revealPasswords()"></i>
+                            </div>
+                            <div id="error"></div>
+                        </div>
+
+                        <!-- Password Confirmation -->
+                        <label class="confirm-password">Confirm Password</label>
+                        <div class="passwordContainer">
+                            <div class="inputContainer">
+                                <input type="password" id="password_two" name="password_two"
+                                    placeholder="Confirm Password" pattern="[A-Za-z]{3,}" min="4">
+                                <!-- Elements to toggle between password visibility -->
+                                <i id="eye2" class="fas fa-eye" onclick="revealPasswords()"></i>
+                            </div>
+                            <div id="error"></div>
+                        </div>
+                        <!-- Date of Birth Field -->
+                        <label for="dateOfBirth" class="dob">Date of Birth</label>
+                        <div class="inputContainer">
+                            <input type="date" id="dateOfBirth">
+                        </div>
+                        <div class="error"></div>
+                        <!-- Agree to Terms Field -->
+                        <p><input type="checkbox" id="agreecheck">I agree to the Terms and
+                            Conditions & Privacy Policy</p>
+                        <div class="submitContainer"><button id="agreedToTerms" onclick="comparePass()">Submit</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="help">
+                    <i class="far fa-question-circle"></i>
+                    <!-- Unicode: f059 -->
+                </div>
+            </fieldset>
+        </div>
+    </main>
+</body>
+
+</html>

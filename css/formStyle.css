@@ -1,0 +1,251 @@
+/* --- Media Queries --- */
+
+/* Desktop + Laptop */
+@media only screen and (min-width:720px) {
+
+    /* Turn off input placeholder */
+    ::placeholder {
+        display: none;
+    }
+}
+
+/* Phone + Tablet */
+@media only screen and (max-width: 600px) {
+
+    /* Turn off animated gradient */
+    body {
+        background: #0029c5;
+        animation: none;
+    }
+
+    /* Hide Label */
+    label {
+        display: none;
+        width: 100%;
+    }
+
+    /* Font Awesome Icons */
+    #full-name::before {
+        content: "\f2bd ";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+    }
+
+    #email::before {
+        content: "\f199 ";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+    }
+
+    #password_one::before {
+        content: "\f084 ";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+    }
+
+    #password_two::before {
+        content: "\f084 ";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+    }
+
+    #dateOfBirth::before {
+        content: "\f073 ";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+    }
+}
+
+/* ==== Generic Styling ==== */
+
+* {
+    padding: 0;
+}
+
+main {
+    padding-top: 2em;
+}
+
+body {
+    background: linear-gradient(270deg, #04ca95, #0029c5, #6a00c5, #db05c2, #b4094a);
+    background-color: #c80f56;
+    background-size: 800% 800%;
+    animation: gradientAnimated 16s ease infinite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    padding: 1.5em;
+    border: 0;
+}
+
+legend {
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: .5em;
+}
+
+label {
+    letter-spacing: .1em;
+}
+
+input {
+    padding: .1em;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+/*
+input:valid {
+    border: 2px solid forestgreen;
+}
+*/
+input:required {
+    border: 1px dashed red;
+}
+
+i {
+    cursor: pointer;
+    padding: .5px;
+}
+
+button {
+    padding: .5em;
+    width: 14em;
+    background: linear-gradient(270deg, #2647cc, #7a29c0, #c82664);
+    color: white;
+    font-weight: bold;
+    border: solid .2em white;
+    border-radius: .8em;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(270deg, #c82664, #7a29c0, #2647cc);
+    cursor: pointer;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes gradientAnimated {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes gradientAnimated {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+/* ==== Specific Styling ==== */
+.form-wrapper {
+    background-color: white;
+    border-radius: .8em;
+    width: 24em;
+    margin: auto;
+}
+
+.logo {
+    height: 6em;
+    width: 9em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-container {
+    display: grid;
+}
+
+/* Input Styling */
+.inputContainer {
+    border-radius: 2px;
+    padding: .1em;
+}
+
+/* Error Div Styling */
+.error {
+    color: white;
+    background-color: crimson;
+    background-color: forestgreen;
+}
+
+#error {
+    color: white;
+    background-color: crimson;
+    background-color: forestgreen;
+}
+
+/* Password Visibility 
+#show, #show2  {
+}
+
+#hide, #hide2 {
+    display: none;
+}
+*/
+
+/* Font Awesome Icons */
+.fname::before {
+    content: "\f2bd ";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+}
+
+.em::before {
+    content: "\f199 ";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+}
+
+.password::before {
+    content: "\f084 ";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+}
+
+.confirm-password::before {
+    content: "\f084 ";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+}
+
+.dob::before {
+    content: "\f073 ";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+}
+
+.submitContainer {
+    text-align: center;
+}
+
+.help {
+    text-align: center;
+    padding-top: .6em;
+}
