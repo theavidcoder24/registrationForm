@@ -218,6 +218,12 @@ img {
     background-color: forestgreen;
 }
 
+.asterisk_input::after {
+    content:"*"; 
+    color: red;
+    font-size: 16px; 
+  }
+
 /* Password Visibility 
 #show, #show2  {
 }
