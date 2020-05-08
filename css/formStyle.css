@@ -27,6 +27,7 @@
 }
 
 @media only screen and (max-width: 600px) {
+
     /* -- Turn off animated gradient -- */
     body {
         background: #0029c5;
@@ -219,10 +220,10 @@ img {
 }
 
 .asterisk_input::after {
-    content:"*"; 
+    content: " *";
     color: red;
-    font-size: 16px; 
-  }
+    font-size: 16px;
+}
 
 /* Password Visibility 
 #show, #show2  {
