@@ -25,7 +25,7 @@
     }
 
     /* Font Awesome Icons */
-    #full-name::before {
+   input #full-name::before {
         content: "\f2bd ";
         font-weight: 900;
         font-family: "Font Awesome 5 Free";
