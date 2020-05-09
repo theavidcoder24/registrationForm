@@ -30,11 +30,19 @@
 /* Desktop + Laptop */
 @media only screen and (min-height:800px),
 (max-width:700px) {
-    main {
+    body {
         padding-top: 6em;
     }
 }
 
+
+/* On screens that are 992px or less, set the background color to blue 
+@media screen and (min-width: 992px) {
+    body {
+      background-color: blue;
+        padding-top: 5em;
+  }
+*/
 /* Phone + Tablet */
 @media only screen and (min-width: 600px) {
 
