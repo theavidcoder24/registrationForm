@@ -31,7 +31,7 @@
                         <!-- Email Field-->
                         <div id="not-req">
                             <label class="em">Email</label>
-                            <div class="inputContainer">
+                            <div class="inputContainer"><span id="emailAsterisk"></span>
                                 <input type="email" id="email" placeholder="Email">
                             </div>
                             <div class="error"></div>
@@ -45,7 +45,7 @@
                                 <!-- Elements to toggle between password visibility -->
                                 <i id="eye" class="fas fa-eye" onclick="revealPasswords()"></i>
                             </div>
-                            <div id="error"></div>
+                            <div class="error"></div>
                         </div>
 
                         <!-- Password Confirmation -->
@@ -80,7 +80,7 @@
                 <div class="helpContainer">
                     <div class="help">
                         <!-- Trigger/Open The Modal -->
-                        <button id="myBtn">Help</button>
+                        <button id="myBtn"><i class="far fa-question-circle"></i></button>
 
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
