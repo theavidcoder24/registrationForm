@@ -1,7 +1,12 @@
 /* ==== Media Queries ==== */
 
 /* Desktop + Laptop */
-@media only screen and (min-width:720px) {}
+@media only screen and (max-height:740px),
+(max-width:700px) {
+    main {
+        padding-top: 6em;
+    }
+}
 
 /* Phone + Tablet */
 @media only screen and (min-width: 600px) {
@@ -40,12 +45,12 @@
         width: 100%;
     }
 
-    /* Take out not required input */
+    /* -- Take out not required input -- */
     #not-req {
         display: none;
     }
 
-    /* Font Awesome Icons */
+    /* -- Font Awesome Icons -- */
     #icon-user {
         display: inline;
         font-weight: 900;
@@ -78,10 +83,6 @@
 }
 
 /* ==== Generic Styling ==== */
-
-* {
-    padding: 0;
-}
 
 main {
     padding-top: 2em;
