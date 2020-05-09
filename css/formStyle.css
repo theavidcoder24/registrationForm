@@ -28,7 +28,7 @@
 
 /* ==== Media Queries ==== */
 /* Desktop + Laptop */
-@media only screen and (max-height:740px),
+@media only screen and (min-height:800px),
 (max-width:700px) {
     main {
         padding-top: 6em;
