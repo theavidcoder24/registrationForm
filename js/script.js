@@ -1,23 +1,24 @@
-// Get the modal
+/* == Open/Close Modal == */ 
+// Open modal //
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
+// Button to opens the modal //
 var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
+// Span element to close it //
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
+// When user clicks on the button, open the modal //
 btn.onmouseover = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on x close modal //
 span.onmouseout = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// When the button isn't focused close modal //
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -25,16 +26,17 @@ window.onclick = function(event) {
 }
 
 
-
-
 /* == Password Visibility == */
 function revealPasswords() {
+  // Open Eye Icon //
     if (password_one.getAttribute('type') === 'text') {
         password_one.setAttribute('type', 'password');
         password_two.setAttribute('type', 'password');
         eye.setAttribute('class', 'fas fa-eye');
         eye2.setAttribute('class', 'fas fa-eye');
-    } else {
+    } 
+    // Close/Slash Eye Icon //
+    else {
         password_one.setAttribute('type', 'text');
         password_two.setAttribute('type', 'text');
         eye.setAttribute('class', 'fas fa-eye-slash');
