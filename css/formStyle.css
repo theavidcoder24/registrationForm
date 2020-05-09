@@ -239,7 +239,7 @@ img {
 
 
 /*  */
-.asterisk_input::after {
+.asterisk::after {
     content: "*";
     color: red;
     font-size: 16px;
@@ -283,6 +283,10 @@ img {
 .help {
     text-align: center;
     padding-top: .6em;
+}
+
+.hover-video:hover {
+
 }
 
 /* -- Modal Box Styling -- */
