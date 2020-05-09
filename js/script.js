@@ -18,14 +18,6 @@ span.onmouseout = function () {
   modal.style.display = "none";
 }
 
-// When the button isn't focused close modal //
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-
 /* == Password Visibility == */
 function revealPasswords() {
   // Open Eye Icon //
