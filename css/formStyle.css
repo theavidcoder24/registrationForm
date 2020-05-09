@@ -212,25 +212,24 @@ img {
     display: none;
 }
 
-
 /* Error Div Styling */
-.error {
-    color: white;
-    background-color: crimson;
-    background-color: forestgreen;
-}
-
 #error {
     color: white;
     background-color: crimson;
-    background-color: forestgreen;
 }
 
 
-/*  */
+/* Asterisk Require */
 .asterisk::after {
     content: "*";
     color: red;
+    font-size: 16px;
+}
+
+/* Asterisk Require */
+#emailAsterisk::after {
+    content: "*";
+    color: transparent;
     font-size: 16px;
 }
 
@@ -285,14 +284,11 @@ img {
     cursor: pointer;
 }
 
-/*
-.help {
+/* Help Video/Modal */
+.helpContainer {
     text-align: center;
-    padding-top: .6em;
 }
 
-.hover-video:hover {}
-*/
 
 iframe {
     width: 36em;
@@ -308,16 +304,14 @@ iframe {
 }
 
 #myBtn {
-    background: white;
-    color: dodgerblue;
-    border-style: outset;
-    border-color: dodgerblue;
+    outline: none;
+    border: none;
+    color: black;
     height: 30px;
     width: 30%;
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: .5em;
+    margin-top: 1.5em;
+    font-size: 20px;
+    background-color: white;
 }
 
 /*The Modal (background)*/
@@ -325,10 +319,10 @@ iframe {
     display: none;
     position: absolute;
     z-index: 1;
-    left: 0;
     top: 0;
-    width: 100%;
+    left: 0;
     height: 100%;
+    width: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
 }
