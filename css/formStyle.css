@@ -1,5 +1,32 @@
-/* ==== Media Queries ==== */
+@keyframes gradientAnimated {
+    0% {
+        background-position: 0% 50%
+    }
 
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes gradientAnimated {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* ==== Media Queries ==== */
 /* Desktop + Laptop */
 @media only screen and (max-height:740px),
 (max-width:700px) {
@@ -154,32 +181,13 @@ img {
     width: 100%;
 }
 
-@keyframes gradientAnimated {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@keyframes gradientAnimated {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
+iframe {
+    width: 36em;
+    height: 19em;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -290,16 +298,6 @@ img {
     text-align: center;
 }
 
-
-iframe {
-    width: 36em;
-    height: 19em;
-    padding: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .help {
     grid-template-columns: 100%;
 }
@@ -307,6 +305,7 @@ iframe {
 #myBtn {
     outline: none;
     border: none;
+    cursor: pointer;
     color: black;
     height: 30px;
     width: 30%;
