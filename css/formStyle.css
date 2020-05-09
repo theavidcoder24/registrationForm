@@ -40,6 +40,11 @@
         width: 100%;
     }
 
+    /* Take out not required input */
+    #not-req {
+        display: none;
+    }
+
     /* Font Awesome Icons */
     #icon-user {
         display: inline;
@@ -141,22 +146,6 @@ input[type=password]:focus {
 i {
     cursor: pointer;
     padding: .5px;
-}
-
-button {
-    padding: .5em;
-    width: 14em;
-    background: linear-gradient(270deg, #2647cc, #7a29c0, #c82664);
-    color: white;
-    font-weight: bold;
-    border: solid .2em white;
-    border-radius: .8em;
-    cursor: pointer;
-}
-
-button:hover {
-    background: linear-gradient(270deg, #c82664, #7a29c0, #2647cc);
-    cursor: pointer;
 }
 
 img {
@@ -280,16 +269,31 @@ img {
     text-align: center;
 }
 
+#submitForm {
+    padding: .5em;
+    width: 14em;
+    background: linear-gradient(270deg, #2647cc, #7a29c0, #c82664);
+    color: white;
+    font-weight: bold;
+    border: solid .2em white;
+    border-radius: .8em;
+    cursor: pointer;
+}
+
+#submitForm:hover {
+    background: linear-gradient(270deg, #c82664, #7a29c0, #2647cc);
+    cursor: pointer;
+}
+
+/*
 .help {
     text-align: center;
     padding-top: .6em;
 }
 
-.hover-video:hover {
+.hover-video:hover {}
+*/
 
-}
-
-/* -- Modal Box Styling -- */
 iframe {
     width: 560px;
     height: 315px;
@@ -316,7 +320,7 @@ iframe {
     border-radius: .5em;
 }
 
-/*The Modal (background)*/ 
+/*The Modal (background)*/
 .modal {
     display: none;
     position: absolute;
@@ -330,7 +334,7 @@ iframe {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/*Modal Content/Box*/ 
+/*Modal Content/Box*/
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;

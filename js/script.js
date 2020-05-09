@@ -1,4 +1,3 @@
-/* == Modal Box == */
 // Get the modal
 var modal = document.getElementById("myModal");
 

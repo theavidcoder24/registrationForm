@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/formStyle.css">
     <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <title>Registration Form</title>
 </head>
 
@@ -29,11 +29,13 @@
                         </div>
                         <div class="error"></div>
                         <!-- Email Field-->
-                        <label class="em">Email</label>
-                        <div class="inputContainer">
-                            <input type="email" id="email" placeholder="Email">
+                        <div id="not-req">
+                            <label class="em">Email</label>
+                            <div class="inputContainer">
+                                <input type="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="error"></div>
                         </div>
-                        <div class="error"></div>
                         <!-- Password Field -->
                         <label class="password">Password</label>
                         <div class="passwordContainer">
@@ -71,25 +73,28 @@
                         </div>
                     </div>
                 </form>
-                <div class="help">
-                    <div class="hover-video">
-                        <i class="far fa-question-circle"></i>
-                        <!-- Unicode: f059 -->
-                    </div>
-                    <!-- Trigger/Open The Modal -->
-                    <button id="myBtn">Help</button>
+                <!--
+                <div class="hover-video">
+                    <i class="far fa-question-circle"></i>
+                     Unicode: f059 -->
+                <div class="helpContainer">
+                    <div class="help">
+                        <!-- Trigger/Open The Modal -->
+                        <button id="myBtn">Get Help</button>
 
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
 
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <iframe class="gethelp" src="https://www.youtube.com/embed/2akt3P8ltLM?controls=1"
-                                allowfullscreen></iframe>
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <iframe class="gethelp" src="https://www.youtube.com/embed/v=2akt3P8ltLM"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
+        </div>
         </div>
         </fieldset>
         </div>
