@@ -1,11 +1,11 @@
-/* == Open/Close Modal == */
-// Open modal //
+/* == Modal == */
+// Open modal 
 var modal = document.getElementById("myModal");
 
-// Button to opens the modal //
+// Button to opens the modal 
 var btn = document.getElementById("myBtn");
 
-// Span element to close it //
+// Span element to close it 
 var span = document.getElementsByClassName("close")[0];
 
 // When user clicks on the button, open the modal //
@@ -13,21 +13,21 @@ btn.onmouseover = function () {
   modal.style.display = "block";
 }
 
-// When the user clicks on x close modal //
+// When the user clicks on x close modal 
 span.onmouseout = function () {
   modal.style.display = "none";
 }
 
 /* == Password Visibility == */
 function revealPasswords() {
-  // Open Eye Icon //
+  // Open Eye Icon 
   if (password_one.getAttribute('type') === 'text') {
     password_one.setAttribute('type', 'password');
     password_two.setAttribute('type', 'password');
     eye.setAttribute('class', 'fas fa-eye');
     eye2.setAttribute('class', 'fas fa-eye');
   }
-  // Close/Slash Eye Icon //
+  // Close/Slash Eye Icon 
   else {
     password_one.setAttribute('type', 'text');
     password_two.setAttribute('type', 'text');
