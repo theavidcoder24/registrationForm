@@ -14,8 +14,15 @@ btn.onmouseover = function () {
 }
 
 // When the user clicks on x close modal 
-span.onmouseout = function () {
+span.onclick = function (){ 
   modal.style.display = "none";
+}
+
+// If user clicks anywhere outside of the modal it closes
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 
 /* == Password Visibility == */

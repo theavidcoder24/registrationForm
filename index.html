@@ -18,12 +18,11 @@
                 <div class="logo">
                     <img src="images/icon-4399643-edited.svg" alt="Logo Image" />
                 </div>
-                <form action="#" method="POST" id="formsubmit" onsubmit="validate()" novalidate>
+                <form action="#" method="POST" id="formsubmit" onsubmit="">
                     <div class="form-container">
                         <!-- Full Name Field -->
                         <label class="fname">Full Name</label>
                         <div class="inputContainer"><span class="asterisk"></span>
-                            <i id="icon-user" class="fas fa-user-circle"></i>
                             <input class="input-field" type="text" id="full-name" placeholder="Full Name"
                                 pattern="(?!.*)[A-Za-z]{3,128}">
                         </div>
@@ -34,62 +33,54 @@
                             <div class="inputContainer"><span id="emailAsterisk"></span>
                                 <input type="email" id="email" placeholder="Email">
                             </div>
-                            <div class="error"></div>
-                        </div>
-                        <!-- Password Field -->
-                        <label class="password">Password</label>
-                        <div class="passwordContainer">
-                            <div class="inputContainer"><span class="asterisk"></span>
-                                <input type="password" name="password_one" id="password_one" placeholder="Password"
-                                    pattern="[A-Za-z]{8,}" onblur="comparePass()">
-                                <!-- Elements to toggle between password visibility -->
-                                <i id="eye" class="fas fa-eye" onclick="revealPasswords()"></i>
-                            </div>
-                            <div class="error"></div>
-                        </div>
-
-                        <!-- Password Confirmation -->
-                        <label class="confirm-password">Confirm Password</label>
-                        <div class="passwordContainer">
-                            <div class="inputContainer"><span class="asterisk"></span>
-                                <input type="password" id="password_two" name="password_two"
-                                    placeholder="Confirm Password" pattern="[A-Za-z]{8,}" onblur="comparePass()">
-                                <!-- Elements to toggle between password visibility -->
-                                <i id="eye2" class="fas fa-eye" onclick="revealPasswords()"></i>
-                            </div>
-                            <div id="error"></div>
-                        </div>
-                        <!-- Date of Birth Field -->
-                        <label class="dob">Date of Birth</label>
-                        <div class="inputContainer"><span class="asterisk"></span>
-                            <input type="date" id="dateOfBirth">
                         </div>
                         <div class="error"></div>
-                        <!-- Agree to Terms Field -->
-                        <p><input type="checkbox" id="agreecheck">I agree to the Terms and
-                            Conditions & Privacy Policy</p>
-                        <div class="submitContainer">
-                            <button id="submitForm">Submit</button>
+                    </div>
+                    <!-- Password Field -->
+                    <label class="password">Password</label>
+                    <div class="passwordContainer">
+                        <div class="inputContainer"><span class="asterisk"></span>
+                            <input type="password" name="password_one" id="password_one" placeholder="Password"
+                                pattern="[A-Za-z]{8,}" onblur="comparePass()">
+                            <!-- Elements to toggle between password visibility -->
+                            <i id="eye" class="fas fa-eye" onclick="revealPasswords()"></i>
                         </div>
+                        <div class="error"></div>
+                    </div>
+
+                    <!-- Password Confirmation -->
+                    <label class="confirm-password">Confirm Password</label>
+                    <div class="passwordContainer">
+                        <div class="inputContainer"><span class="asterisk"></span>
+                            <input type="password" id="password_two" name="password_two" placeholder="Confirm Password"
+                                pattern="[A-Za-z]{8,}" onblur="comparePass()">
+                            <!-- Elements to toggle between password visibility -->
+                            <i id="eye2" class="fas fa-eye" onclick="revealPasswords()"></i>
+                        </div>
+                        <div id="error"></div>
+                    </div>
+                    <!-- Date of Birth Field -->
+                    <label class="dob">Date of Birth</label>
+                    <div class="inputContainer"><span class="asterisk"></span>
+                        <input type="date" id="dateOfBirth">
+                    </div>
+                    <div class="error"></div>
+                    <!-- Agree to Terms Field -->
+                    <p><input type="checkbox" id="agreecheck">I agree to the Terms and
+                        Conditions & Privacy Policy</p>
+                    <div class="submitContainer">
+                        <button id="submitForm">Submit</button>
                     </div>
                 </form>
-                <!--
-                <div class="hover-video">
-                    <i class="far fa-question-circle"></i>
-                     Unicode: f059 -->
                 <div class="helpContainer">
                     <div class="help">
-                        <!-- Trigger/Open The Modal -->
+                        <!-- Modal Field -->
                         <button id="myBtn"><i class="far fa-question-circle"></i></button>
-
-                        <!-- The Modal -->
                         <div id="myModal" class="modal">
-
-                            <!-- Modal content -->
                             <div class="modal-content">
                                 <span class="close">&times;</span>
-                                <iframe class="gethelp" src="https://www.youtube.com/embed/atxYe-nOa9w" frameborder="0"
-                                    allowfullscreen></iframe>
+                                <!-- Help Video -->
+                                <iframe src="https://www.youtube.com/embed/atxYe-nOa9w" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>

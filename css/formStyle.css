@@ -149,15 +149,9 @@ input:invalid {
     border: 1px solid red;
 }
 
-input:required {
+input::required {
     border: 1.5px dashed red;
 }
-
-/*
-input:valid {
-    border: 1.5px solid forestgreen;
-}
-*/
 
 input[type=text]:focus {
     border: 1.5px solid rgb(136, 136, 136);
@@ -188,10 +182,15 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: none;
 }
 
 
 /* ==== Specific Styling ==== */
+.form-container {
+    display: grid;
+}
+
 .form-wrapper {
     background-color: white;
     border-radius: .8em;
@@ -207,18 +206,10 @@ iframe {
     margin-right: auto;
 }
 
-.form-container {
-    display: grid;
-}
-
 /* Input Styling */
 .inputContainer {
     border-radius: 2px;
     padding: .1em;
-}
-
-#icon-user {
-    display: none;
 }
 
 /* Error Div Styling */
@@ -226,7 +217,6 @@ iframe {
     color: white;
     background-color: crimson;
 }
-
 
 /* Asterisk Require */
 .asterisk::after {
@@ -307,8 +297,6 @@ iframe {
     border: none;
     cursor: pointer;
     color: black;
-    height: 30px;
-    width: 30%;
     margin-top: 1.5em;
     font-size: 20px;
     background-color: white;
