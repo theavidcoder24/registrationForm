@@ -216,8 +216,7 @@ iframe {
 
 /* Error Div Styling */
 #error {
-    color: white;
-    background-color: crimson;
+    background-color: red;
 }
 
 /* Asterisk Require */

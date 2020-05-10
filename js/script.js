@@ -1,18 +1,24 @@
-/* Validate Form 
-window.onload = function () {
-  document.getElementById('formsubmit').
-    addEventListener('submit', function (event) {
-      event.preventDefault();
-    });
-}
-*/
-function validateForm() {
-  var fullname = document.forms["formsubmit"]["full-name"].value;
-  if (fullname == "") {
-    alert("Name must be filled out");
-    return false;
+/* == Validate Form == */
+var fullname = document.getElementById('full-name')
+var password = document.getElementById('password_one')
+var password2 = document.getElementById('password_two')
+var form = document.getElementById('formsubmit')
+var errorElement = document.getElementById('error')
+
+form.addEventListener('submit', (e) => {
+  let messages = []
+  if (fullname.value === '' || fullname.value == null) {
+    messages.push('Name is required')
   }
-}
+  if (password.value.length <= 8) {
+    messages.push('Password must be longer than 8 characters')
+  }
+  if (messages.length > 0) {
+    e.preventDefult()
+    errorElement.innerText = messages.join(', ')
+  }
+})
+
 
 /* == Modal == */
 // Open modal 
