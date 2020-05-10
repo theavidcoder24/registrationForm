@@ -144,6 +144,12 @@ legend {
 label {
     letter-spacing: .1em;
 }
+label:nth-child(1) {
+    grid-column: 1;
+}
+label:nth-child(2) {
+    
+}
 
 input {
     padding: .1em;
@@ -188,7 +194,6 @@ iframe {
     border: none;
 }
 
-
 /* ==== Specific Styling ==== */
 .form-container {
     display: grid;
@@ -205,7 +210,6 @@ iframe {
 .logo {
     text-align: center;
 }
-
 
 /* Input Styling */
 .inputContainer {
