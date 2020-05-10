@@ -63,7 +63,6 @@
     /* -- Turn off animated gradient -- */
     body {
         background: none;
-        background: linear-gradient(0);
         animation: none;
         background-color: #0029c5;
         transition: none;
