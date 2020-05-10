@@ -83,8 +83,9 @@
     }
 
     /* -- Font Awesome Icons -- */
-    #icon-user {
-        display: inline;
+    #user-field::after {
+        content: "\f2bd ";
+        font-size: small;
         font-weight: 900;
         font-family: "Font Awesome 5 Free";
     }
@@ -95,20 +96,8 @@
         font-family: "Font Awesome 5 Free";
     }
 
-    #password_one::before {
+    .password-field::before {
         content: "\f084 ";
-        font-weight: 900;
-        font-family: "Font Awesome 5 Free";
-    }
-
-    #password_two::before {
-        content: "\f084 ";
-        font-weight: 900;
-        font-family: "Font Awesome 5 Free";
-    }
-
-    #dateOfBirth::before {
-        content: "\f073 ";
         font-weight: 900;
         font-family: "Font Awesome 5 Free";
     }
