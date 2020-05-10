@@ -83,19 +83,19 @@
     }
 
     /* -- Font Awesome Icons -- */
-    #user-field::after {
-        content: "\f2bd ";
-        font-weight: 900;
-        font-family: "Font Awesome 5 Free";
-        font-size: 16px;
+    #user-field>#user {
+        display: inline;
     }
-    .password-field::after {
-        content: "\f084 ";
-        font-weight: 900;
-        font-family: "Font Awesome 5 Free";
-        font-size: 16px;
+
+    #password-field>#pass {
+        display: inline;
+    }
+
+    #password-field2>#pass2 {
+        display: inline;
     }
 }
+
 
 /* ==== Generic Styling ==== */
 
@@ -155,12 +155,6 @@ input[type=email]:optional :focus {
 
 input[type=password]:required {
     border: 1.5px dashed red;
-}
-
-#eye,
-#eye2 {
-    cursor: pointer;
-    padding: .5px;
 }
 
 img {
@@ -227,6 +221,20 @@ iframe {
 }
 
 /* Font Awesome Icons */
+/* Mobile + Tablet */
+#user {
+    display: none;
+}
+
+#pass {
+    display: none;
+}
+
+#pass2 {
+    display: none;
+}
+
+/* Destop + Laptop */
 .fname::before {
     content: "\f2bd ";
     font-weight: 900;
@@ -255,6 +263,12 @@ iframe {
     content: "\f073 ";
     font-weight: 900;
     font-family: "Font Awesome 5 Free";
+}
+
+#eye,
+#eye2 {
+    cursor: pointer;
+    padding: .5px;
 }
 
 .submitContainer {

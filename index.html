@@ -23,7 +23,7 @@
                         <!-- Full Name Field -->
                         <label class="fname">Full Name</label>
                         <div class="inputContainer"><span class="asterisk"></span>
-                            <span id="user-field"></span>
+                            <span id="user-field"><i id="user" class="fas fa-user-circle"></i></span>
                             <input type="text" id="full-name" placeholder="Full Name"
                                 pattern="(?!.*/=+-~.,>-_)[A-Za-z]{3,128}">
                             <div id="fnameError"></div>
@@ -39,7 +39,7 @@
                         <label class="password">Password</label>
                         <div class="passwordContainer">
                             <div class="inputContainer"><span class="asterisk"></span>
-                                <span class="password-field"></span>
+                                <span id="password-field"><i id="pass" class="fas fa-key"></i></span>
                                 <input type="password" name="password_one" id="password_one" placeholder="Password"
                                     pattern="{8,100}" onblur="comparePass()">
                                 <!-- Elements to toggle between password visibility -->
@@ -51,7 +51,7 @@
                         <label class="confirm-password">Confirm Password</label>
                         <div class="passwordContainer">
                             <div class="inputContainer"><span class="asterisk"></span>
-                                <span class="password-field"></span>
+                                <span id="password-field2"><i id="pass2" class="fas fa-key"></i></span>
                                 <input type="password" id="password_two" name="password_two"
                                     placeholder="Confirm Password" pattern="{8,100}" onblur="comparePass()">
                                 <!-- Elements to toggle between password visibility -->
