@@ -168,8 +168,10 @@ input[type=password]:required {
 }
 
 img {
-    height: 100%;
-    width: 100%;
+    height: 6em;
+    width: 9em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 iframe {
@@ -195,13 +197,14 @@ iframe {
     margin: auto;
 }
 
-/* Logo Styling */
+/* Logo Styling 
 .logo {
     height: 6em;
     width: 9em;
     margin-left: auto;
     margin-right: auto;
 }
+*/
 
 /* Input Styling */
 .inputContainer {
