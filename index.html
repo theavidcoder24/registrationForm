@@ -24,7 +24,7 @@
                         <label class="fname">Full Name</label>
                         <div class="inputContainer"><span class="asterisk"></span>
                             <input class="input-field" type="text" id="full-name" placeholder="Full Name"
-                                pattern="(?!.*/=+-~.,>-_)[A-Za-z]{3,128}">
+                                pattern="(?!.*/=+-~.,>-_)[A-Za-z]{3,128}" onblur="validateFullName()">
                         </div>
                         <!-- Email Field-->
                         <div id="not-req">

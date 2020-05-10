@@ -2,22 +2,28 @@
 var fullname = document.getElementById('full-name');
 var password = document.getElementById('password_one');
 var password2 = document.getElementById('password_two');
+var email = document.getElementById('email');
 var form = document.getElementById('formsubmit');
 var errorElement = document.getElementById('error');
 
-form.addEventListener('submit', (e) => {
-  let messages = [];
-  if (fullname.value === '' || fullname.value == null) {
-    alert('Name is required');
-  }
-  if (password.value.length <= 8) {
-    messages.push('Password must be longer than 8 characters');
-  }
-  if (messages.length > 0) {
-    e.preventDefult();
-    errorElement.innerText = messages.join(', ');
-  }
-})
+// Validation Colours
+var green = 'forestgreen'
+var red = 'red'
+/* 
+const green = '#4CAF50';
+const red = '#F44336';
+*/
+
+/* Handle Form */
+form.addEventListener('submit', function(event) {
+  // Prevent default behaviour
+  event.preventDefault();
+  if (
+    validateFullName() &&
+    validateEmail() &&
+    validatePassword() &&
+    validateConfirmPassword() 
+  ) {
 
 
 /* == Modal == */
