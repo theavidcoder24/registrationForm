@@ -72,13 +72,9 @@ function comparePass() {
     if (password_one.value === password_two.value) {
       error.innerHTML = "Passwords Match";
       error.style.backgroundColor = green;
-      password_one.setCustomValidity("");
-      password_two.setCustomValidity("");
     } else {
       error.innerHTML = "Passwords Don't Match";
       error.style.backgroundColor = red;
-      password_one.setCustomValidity("");
-      password_two.setCustomValidity("");
     }
   }
 }
