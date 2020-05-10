@@ -1,11 +1,11 @@
-/* Validate Form */
+/* Validate Form 
 window.onload = function () {
   document.getElementById('formsubmit').
     addEventListener('submit', function (event) {
       event.preventDefault();
     });
 }
-
+*/
 function validateForm() {
   var fullname = document.forms["formsubmit"]["full-name"].value;
   if (fullname == "") {

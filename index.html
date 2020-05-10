@@ -18,7 +18,7 @@
                 <div class="logo">
                     <img src="images/logo.svg" alt="Logo Image" />
                 </div>
-                <form action="#" method="POST" id="formsubmit" onsubmit="return validateForm()">
+                <form action="#" method="POST" id="formsubmit" name="formsubmit" onsubmit="return validateForm()">
                     <div class="form-container">
                         <!-- Full Name Field -->
                         <label class="fname">Full Name</label>
@@ -40,7 +40,7 @@
                         <div class="passwordContainer">
                             <div class="inputContainer"><span class="asterisk"></span>
                                 <input type="password" name="password_one" id="password_one" placeholder="Password"
-                                    pattern="[A-Za-z]{8,}" onblur="comparePass()">
+                                    pattern="{8,100}" onblur="comparePass()">
                                 <!-- Elements to toggle between password visibility -->
                                 <i id="eye" class="fas fa-eye" onclick="revealPasswords()"></i>
                             </div>
@@ -52,7 +52,7 @@
                         <div class="passwordContainer">
                             <div class="inputContainer"><span class="asterisk"></span>
                                 <input type="password" id="password_two" name="password_two"
-                                    placeholder="Confirm Password" pattern="[A-Za-z]{8,}" onblur="comparePass()">
+                                    placeholder="Confirm Password" pattern="{8,100}" onblur="comparePass()">
                                 <!-- Elements to toggle between password visibility -->
                                 <i id="eye2" class="fas fa-eye" onclick="revealPasswords()"></i>
                             </div>

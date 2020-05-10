@@ -147,9 +147,6 @@ label {
 label:nth-child(1) {
     grid-column: 1;
 }
-label:nth-child(2) {
-    
-}
 
 input {
     padding: .1em;
