@@ -1,7 +1,9 @@
 /* == Validate Form == */
 var fullname = document.getElementById('full-name');
+var email = document.getElementById('email');
 var password = document.getElementById('password_one');
 var password2 = document.getElementById('password_two');
+var date = document.getElementById('dateOfBirth');
 var form = document.getElementById('formsubmit');
 var error = document.getElementById('error');
 // Validation Colours
@@ -13,14 +15,27 @@ form.addEventListener('submit', (e) => {
   if (fullname.value === '' || fullname.value == null) {
     alert('Name is required');
   }
+  if (email.value === '' || email.value == null) {
+    alert('Email is required');
+  }
   if (password.value.length <= 8) {
     messages.push('Password must be longer than 8 characters');
+  }
+  if (dateOfBirth.value === '' || dateOfBirth.value == null) {
+    alert('Date of Birth is required');
   }
   if (messages.length > 0) {
     e.preventDefult();
     error.innerText = messages.join(', ');
   }
 })
+
+// Date Validation
+function validateDate(form) {
+  if (!checkDate(form.startdate)) return false;
+  if (!checkTime(form.starttime)) return false;
+  return true;
+}
 
 /* == Modal == */
 // Open modal 
