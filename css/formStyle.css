@@ -85,21 +85,15 @@
     /* -- Font Awesome Icons -- */
     #user-field::after {
         content: "\f2bd ";
-        font-size: small;
         font-weight: 900;
         font-family: "Font Awesome 5 Free";
+        font-size: 16px;
     }
-
-    #email::before {
-        content: "\f199 ";
-        font-weight: 900;
-        font-family: "Font Awesome 5 Free";
-    }
-
-    .password-field::before {
+    .password-field::after {
         content: "\f084 ";
         font-weight: 900;
         font-family: "Font Awesome 5 Free";
+        font-size: 16px;
     }
 }
 
