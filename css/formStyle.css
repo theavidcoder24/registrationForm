@@ -62,8 +62,10 @@
 
     /* -- Turn off animated gradient -- */
     body {
-        background: #0029c5;
+        background: none;
         animation: none;
+        background-color: #0029c5;
+        animation-play-state: paused;
     }
 
     /* -- Hide Label -- */
