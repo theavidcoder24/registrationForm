@@ -144,6 +144,7 @@ legend {
 label {
     letter-spacing: .1em;
 }
+
 label:nth-child(1) {
     grid-column: 1;
 }
@@ -215,8 +216,12 @@ iframe {
 }
 
 /* Error Div Styling */
-#error {
-    
+#error:valid {
+    background-color: #009a29;
+}
+
+#error:invalid {
+    background-color: #CD0000;
 }
 
 /* Asterisk Require */

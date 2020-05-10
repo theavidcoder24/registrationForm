@@ -24,13 +24,14 @@
                         <label class="fname">Full Name</label>
                         <div class="inputContainer"><span class="asterisk"></span>
                             <input class="input-field" type="text" id="full-name" placeholder="Full Name"
-                                pattern="(?!.*/=+-~.,>-_)[A-Za-z]{3,128}" onblur="validateFullName()">
+                                pattern="(?!.*/=+-~.,>-_)[A-Za-z]{3,128}">
                         </div>
                         <!-- Email Field-->
                         <div id="not-req">
                             <label class="em">Email</label>
                             <div class="inputContainer"><span id="emailAsterisk"></span>
                                 <input type="email" id="email" placeholder="Email">
+                                <span class="error"></span>
                             </div>
                         </div>
                         <!-- Password Field -->
@@ -54,12 +55,12 @@
                                 <i id="eye2" class="fas fa-eye" onclick="revealPasswords()"></i>
                             </div>
                         </div>
+                        <div id="error"></div>
                         <!-- Date of Birth Field -->
                         <label class="dob">Date of Birth</label>
                         <div class="inputContainer"><span class="asterisk"></span>
                             <input type="date" id="dateOfBirth">
                         </div>
-                        <div id="error"></div>
                         <!-- Agree to Terms Field -->
                         <p><input type="checkbox" id="agreecheck">I agree to the Terms and
                             Conditions & Privacy Policy</p>

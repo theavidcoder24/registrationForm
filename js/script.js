@@ -2,29 +2,25 @@
 var fullname = document.getElementById('full-name');
 var password = document.getElementById('password_one');
 var password2 = document.getElementById('password_two');
-var email = document.getElementById('email');
 var form = document.getElementById('formsubmit');
-var errorElement = document.getElementById('error');
-
+var error = document.getElementById('error');
 // Validation Colours
-var green = 'forestgreen'
-var red = 'red'
-/* 
-const green = '#4CAF50';
-const red = '#F44336';
-*/
+var red = '#fc4949';
+var green = '#34d960';
 
-/* Handle Form */
-form.addEventListener('submit', function(event) {
-  // Prevent default behaviour
-  event.preventDefault();
-  if (
-    validateFullName() &&
-    validateEmail() &&
-    validatePassword() &&
-    validateConfirmPassword() 
-  ) {
-
+form.addEventListener('submit', (e) => {
+  let messages = [];
+  if (fullname.value === '' || fullname.value == null) {
+    alert('Name is required');
+  }
+  if (password.value.length <= 8) {
+    messages.push('Password must be longer than 8 characters');
+  }
+  if (messages.length > 0) {
+    e.preventDefult();
+    error.innerText = messages.join(', ');
+  }
+})
 
 /* == Modal == */
 // Open modal 
@@ -70,15 +66,17 @@ function revealPasswords() {
     eye2.setAttribute('class', 'fas fa-eye-slash');
   }
 }
-
+/* Compare Passwords */
 function comparePass() {
   if (password_one.value.length > 0 && password_two.value.length > 0) {
     if (password_one.value === password_two.value) {
       error.innerHTML = "Passwords Match";
+      error.style.backgroundColor = green;
       password_one.setCustomValidity("");
       password_two.setCustomValidity("");
     } else {
-      error.innerHTML = "Passwords don't match";
+      error.innerHTML = "Passwords Don't Match";
+      error.style.backgroundColor = red;
       password_one.setCustomValidity("");
       password_two.setCustomValidity("");
     }
