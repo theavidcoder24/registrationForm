@@ -161,7 +161,8 @@ input[type=password]:required {
     border: 1.5px dashed red;
 }
 
-i {
+#eye,
+#eye2 {
     cursor: pointer;
     padding: .5px;
 }

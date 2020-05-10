@@ -1,3 +1,19 @@
+/* Validate Form */
+window.onload = function () {
+  document.getElementById('formsubmit').
+    addEventListener('submit', function (event) {
+      event.preventDefault();
+    });
+}
+
+function validateForm() {
+  var fullname = document.forms["formsubmit"]["full-name"].value;
+  if (fullname == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
 /* == Modal == */
 // Open modal 
 var modal = document.getElementById("myModal");
@@ -14,12 +30,12 @@ btn.onmouseover = function () {
 }
 
 // When the user clicks on x close modal 
-span.onclick = function (){ 
+span.onclick = function () {
   modal.style.display = "none";
 }
 
 // If user clicks anywhere outside of the modal it closes
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
@@ -49,8 +65,7 @@ function comparePass() {
       error.innerHTML = "Passwords Match";
       password_one.setCustomValidity("");
       password_two.setCustomValidity("");
-    }
-    else {
+    } else {
       error.innerHTML = "Passwords don't match";
       password_one.setCustomValidity("");
       password_two.setCustomValidity("");
