@@ -70,15 +70,15 @@ function revealPasswords() {
   if (password_one.getAttribute('type') === 'text') {
     password_one.setAttribute('type', 'password');
     password_two.setAttribute('type', 'password');
-    eye.setAttribute('class', 'fas fa-eye');
-    eye2.setAttribute('class', 'fas fa-eye');
+    eye.setAttribute('class', 'fas fa-eye-slash');
+    eye2.setAttribute('class', 'fas fa-eye-slash');
   }
   // Close/Slash Eye Icon 
   else {
     password_one.setAttribute('type', 'text');
     password_two.setAttribute('type', 'text');
-    eye.setAttribute('class', 'fas fa-eye-slash');
-    eye2.setAttribute('class', 'fas fa-eye-slash');
+    eye.setAttribute('class', 'fas fa-eye');
+    eye2.setAttribute('class', 'fas fa-eye');
   }
 }
 /* Compare Passwords */
