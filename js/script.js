@@ -41,14 +41,19 @@ function validateDate(form) {
 // Open modal 
 var modal = document.getElementById("myModal");
 
-// Button to opens the modal 
+// Icon to open the modal 
 var btn = document.getElementById("myBtn");
 
 // Span element to close it 
 var span = document.getElementsByClassName("close")[0];
 
-// When user clicks on the button, open the modal //
+// When user hovers on the icon open the modal
 btn.onmouseover = function () {
+  modal.style.display = "block";
+}
+
+// When the user clicks the icon open modal
+btn.onclick = function () {
   modal.style.display = "block";
 }
 
