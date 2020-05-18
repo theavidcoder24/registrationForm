@@ -35,19 +35,19 @@
     }
 }
 
-@media (max-width: 610px) {
-    form>div {
-        margin: 0 0 15px 0;
-    }
-
+/* 100% Styled Elements/Attributes */
+@media (max-width: 680px) {
     form>label,
     legend {
         width: 100%;
         margin: 0 0 5px 0;
     }
 
-    form>div>div,
-    form>div>fieldset>div {
+    .form-wrapper>fieldset>div>form {
+        width: 100%;
+    }
+
+    .asterisk {
         width: 100%;
     }
 
