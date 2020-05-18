@@ -35,6 +35,31 @@
     }
 }
 
+@media (max-width: 610px) {
+    form>div {
+        margin: 0 0 15px 0;
+    }
+
+    form>label,
+    legend {
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+
+    form>div>div,
+    form>div>fieldset>div {
+        width: 100%;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=url],
+    input[type=password],
+    select {
+        width: 100%;
+    }
+}
+
 /* Phone + Tablet */
 @media only screen and (min-width: 600px) {
 
@@ -57,22 +82,9 @@
         color: transparent;
     }
 }
-/* <------------------------------------------------HELP
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    body {
-      width: 100%;
-    }
-  }
-  .form-wrapper {
-      width: 100%;
-  }*/
 
 @media only screen and (max-width: 600px) {
-    /* <--------------------------------------------HELP
-    .form-wrapper {
-        width: 100%;
-    }
-    */
+
     /* -- Turn off animated gradient -- */
     body {
         background: none;
@@ -83,7 +95,6 @@
         animation-duration: 0s;
         animation-name: none;
     }
-
 
     /* -- Hide Label -- */
     label {
