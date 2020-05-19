@@ -132,6 +132,10 @@
     #password-field2>#pass2 {
         display: inline;
     }
+
+    #dob-field>#dob {
+        display: inline;
+    }
 }
 
 
@@ -269,6 +273,10 @@ iframe {
 }
 
 #pass2 {
+    display: none;
+}
+
+#dob {
     display: none;
 }
 
