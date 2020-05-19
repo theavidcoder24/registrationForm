@@ -60,11 +60,14 @@
 
 /* 100% Styled Elements/Attributes */
 @media (max-width: 680px) {
+    main {
+        height: 100%;
+        width: 100%;
+    }
 
     form>label,
     legend {
         width: 100%;
-        margin: 0 0 5px 0;
     }
 
     .form-wrapper>fieldset>div>form {
@@ -76,10 +79,8 @@
     }
 
     input[type=text],
-    input[type=email],
-    input[type=url],
-    input[type=password],
-    select {
+    input[type=date],
+    input[type=password] {
         width: 100%;
     }
 }
