@@ -35,8 +35,32 @@
     }
 }
 
+@media only screen and (min-width: 600px) {
+
+    /* -- Turn off input placeholder -- */
+    ::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: transparent;
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: transparent;
+    }
+
+    :-ms-input-placeholder {
+        color: transparent;
+    }
+}
+
+
 /* 100% Styled Elements/Attributes */
 @media (max-width: 680px) {
+
     form>label,
     legend {
         width: 100%;
@@ -60,29 +84,8 @@
     }
 }
 
+
 /* Phone + Tablet */
-@media only screen and (min-width: 600px) {
-
-    /* -- Turn off input placeholder -- */
-    ::-webkit-input-placeholder {
-        color: transparent;
-    }
-
-    :-moz-placeholder {
-        /* Firefox 18- */
-        color: transparent;
-    }
-
-    ::-moz-placeholder {
-        /* Firefox 19+ */
-        color: transparent;
-    }
-
-    :-ms-input-placeholder {
-        color: transparent;
-    }
-}
-
 @media only screen and (max-width: 600px) {
 
     /* -- Turn off animated gradient -- */
